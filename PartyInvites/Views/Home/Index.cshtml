@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+
+<style>
+    .btn a {color:white; text-decoration:wavy}
+    body{background-color: #F1F1F1; }
+</style>
+<div class="text-center">
+    @ViewBag.Greeting  World
+    <h1> We're going to have an Exciting party.<br /></h1>
+    <h2>And your invited</h2>
+    <div class="btn btn-success">
+    @Html.ActionLink("RSVP Now", "RsvpForm")
+    </div>
+</div>
